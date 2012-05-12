@@ -28,6 +28,7 @@ global constant
 
 -- Private Routines ------------------------------------------------------------
 -- Custom Call Back function ---------------------------------------------------
+-- returns the callback for the parser functions -------------------------------
 function callb(sequence name)
   atom callb, rtn
 
