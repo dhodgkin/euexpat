@@ -38,7 +38,7 @@ Let me know of any major bugs, or ideas you have. I'll gladly except code
 contributions. If you have a contribution just email it to me.
 
 1. Installation:
-================
+----------------
 
 Copy euexpat.e to your euphoria include directory.
 
@@ -48,10 +48,10 @@ that loads the library.
 ie. EXPAT = open_dll("/place/where/libexpat.so/is")
 
 2. Usage:
-=========
+---------
 
 This wrapper is easy to use:
-----------------------------
+============================
 
 first make your element handlers in an include file say "element.e", like so:
 
@@ -89,23 +89,23 @@ simple!!
 
 
 3. Function List:
-=================
+-----------------
 
-Function                           Status
+    Function                              Status
 
-  create_parser()                       *working
-  free_parser()                         *working
-  set_element_handlers()                *working
-  set_start_element_handler()           *working
-  set_end_element_handler()             *working
-  set_chardata_handler()                *working
-  set_default_handler()                 *working
-  set_comment_handler()                 *working
-  get_current_line_number()             *working
-  get_current_column_number()           *working
-  parse()                               *working
+    create_parser()                       *working
+    free_parser()                         *working
+    set_element_handlers()                *working
+    set_start_element_handler()           *working
+    set_end_element_handler()             *working
+    set_chardata_handler()                *working
+    set_default_handler()                 *working
+    set_comment_handler()                 *working
+    get_current_line_number()             *working
+    get_current_column_number()           *working
+    parse()                               *working
 
-  expat_version()                       *removed
-  expat_version_info()                  *removed
-  parse_buffer()                        *removed
-  get_buffer()                          *removed
+    expat_version()                       *removed
+    expat_version_info()                  *removed
+    parse_buffer()                        *removed
+    get_buffer()                          *removed
