@@ -1,0 +1,38 @@
+--------------------------------------------------------------------------------
+-- test.exw                                                                   --
+--   Author: Damien Hodgkin                                                   --
+--   Email: dracul01@gmail.com                                                --
+--   Copyright: 2005-2012                                                     --
+--   License: BSD                                                             --
+--   Version: 0.1.2                                                           --
+--   Description: Example of parsing an XML file with EuExpat                 --
+--------------------------------------------------------------------------------
+
+include element.e   -- user defined element handler include --
+include get.e       -- Euphoria include for wait_key()      --
+include euexpat.e   -- EuExpat include, ALWAYS include last --
+
+-- Variable declarations --
+atom parser, wait, parse_ok, fn
+sequence line
+
+-- Open and read user XML file --
+fn = open ("test.xml", "r")
+line = gets (fn)
+
+-- Create and invoke the parser --
+parser = create_parser ("ISO-8859-1")
+
+-- Setup your element handlers
+set_start_element_handler (parser, "start_handler")
+-- set_end_element_handler (parser, "end_handler")
+set_chardata_handler (parser, "char_handler")
+set_comment_handler (parser, "comment_handler")
+
+-- Parse the XML data
+parse_ok = parse (parser, line, 1024, 0)
+
+-- Destroy parser --
+free_parser (parser)
+
+wait = wait_key ()
