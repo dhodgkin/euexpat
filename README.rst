@@ -1,5 +1,6 @@
+===========================
 EuExpat for Linux ver 0.1.2
----------------
+===========================
 
 Copyright Info:
 
@@ -21,7 +22,6 @@ Contents:
   1.    Installation
   2.    Usage
   3.    Function List
---------------------------------------------------------------------------------
 
 i. Introduction:
 ----------------
@@ -37,7 +37,6 @@ i. Introduction:
 
     Let me know of any major bugs, or ideas you have. I'll gladly except code
   contributions. If you have a contribution just email it to me.
---
 
 ii. History:
 ------------
@@ -61,10 +60,8 @@ ii. History:
   5/21 - removed expat_version().
          removed expat_version_info().
 
---------------------------------------------------------------------------------
-
 1. Installation:
-----------------
+================
 
   Copy euexpat.e to your euphoria include directory.
 
@@ -74,7 +71,7 @@ ii. History:
     ie. EXPAT = open_dll("/place/where/libexpat.so/is")
 
 2. Usage:
----------
+=========
 
   This wrapper is easy to use:
 
@@ -114,6 +111,7 @@ ii. History:
 
 
 3. Function List:
+=================
 .------------------------------------------------------------------------------.
 |  Function                           |  Status             |  Notes           |
 |-------------------------------------|---------------------|------------------|
