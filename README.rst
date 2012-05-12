@@ -88,9 +88,11 @@ and last create the parser and invoke it::
 simple!!
 
 
-3. Function List:
+3. What Works:
 -----------------
-::
+
+List of functioning functions and non-functioning functions::
+
     Function                              Status
 
     create_parser()                       *working
