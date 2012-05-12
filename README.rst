@@ -2,15 +2,15 @@
 EuExpat for Linux ver 0.1.2
 ===========================
 
-Copyright Info:
+Copyright Info::
 
-EuExpat - Copyright (c) 2005-2012 Damien Hodgkin.
-          Released under the BSD license, see copying.txt.
+  EuExpat - Copyright (c) 2005-2012 Damien Hodgkin.
+            Released under the BSD license, see copying.txt.
 
-Expat   - Copyright (c) 1998, 1999, 2000 Thai Open Source Software Center Ltd
-          and Clark Cooper.
-          Copyright (c) 2001, 2002, 2003 Expat maintainers.
-          Released under the MIT/X Consortium license, see ExpatLicense.txt.
+  Expat   - Copyright (c) 1998, 1999, 2000 Thai Open Source Software Center Ltd
+            and Clark Cooper.
+            Copyright (c) 2001, 2002, 2003 Expat maintainers.
+            Released under the MIT/X Consortium license, see ExpatLicense.txt.
 
 
 Contents:
@@ -53,7 +53,7 @@ ie. EXPAT = open_dll("/place/where/libexpat.so/is")
 This wrapper is easy to use:
 ============================
 
-first make your element handlers in an include file say "element.e", like so:
+first make your element handlers in an include file say "element.e", like so::
 
     global function start_handler()
       puts (1, "in start element")
@@ -65,12 +65,12 @@ first make your element handlers in an include file say "element.e", like so:
       return 0
     end function
 
-then include this above "expat.e" in your main program:
+then include this above "expat.e" in your main program::
 
     include element.e
     include expat.e
 
-then write your code to handle opening and reading the xml file:
+then write your code to handle opening and reading the xml file::
 
     atom parser, ret, wait, parse_ok, fn
     sequence line
@@ -78,7 +78,7 @@ then write your code to handle opening and reading the xml file:
     fn = open("test.xml", "r")
     line = gets(fn)
 
-and last create the parser and invoke it:
+and last create the parser and invoke it::
 
     parser = create_parser("ISO-8859-1")
     set_element_handlers(parser, "start_handler", "end_handler")
@@ -90,7 +90,7 @@ simple!!
 
 3. Function List:
 -----------------
-
+::
     Function                              Status
 
     create_parser()                       *working
