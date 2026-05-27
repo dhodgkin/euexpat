@@ -1,3 +1,4 @@
+-- vim: ft=euphoria
 -- element handlers for the test script
 include misc.e
 
